@@ -6,14 +6,27 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon32.ico">
+  <link rel="icon" href="./favicons/favicon16.svg" type="image/png">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
 
   <header class="header">
-    <img class="header__logo" src="#" width="60" height="50" alt="Логотип Кэт энерджи">
-    <img class="logo" src="#" width="34" height="23" alt="Название сайта">
+    <a class="header__logo-link" href="#">
+      <picture>
+        <source class="header__logo-desktop" media=" (min-width:1440px)" width="70" type="image/svg+xml" height="59" srcset="./images/logotype-icon-desktop.svg">
+        <source class="header__logo-tablet" media="(min-width:768px)" width="60" type="image/svg+xml" height="50" srcset="./images/logotype-icon-tablet.svg">
+        <img class="header__logo-mobile" src="./images/logotype-icon-mobile.svg" width="60" height="50" alt="Логотип Кэт энерджи">
+      </picture>
+    </a>
+    <a class="header__name-link" href="#">
+      <picture>
+        <source class="header__logo-desktop" media=" (min-width:1440px)" width="118" type="image/svg+xml" height="21" srcset="./images/logotype-name.svg">
+        <img class="header__logo-name-mobile-tablet" src="./images/logotype-name.svg" width="101" height="18" alt="Название сайта">
+      </picture>
+    </a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item nav__item--active">
@@ -29,6 +42,9 @@
       <button class="nav__burger-button button" type="button">
         <span class="visually-hidden">кнопка открытия меню</span>
       </button>
+      <button class="nav__burger-button button" type="button">
+        <span class="visually-hidden">кнопка закрытия меню</span>
+      </button>
     </nav>
   </header>
 
@@ -36,8 +52,13 @@
     <section class="cover">
       <h1 class="cover__title title">Функциональное <br>питание для котов</h1>
       <span class="cover__description">Занялся собой? Займись котом!</span>
-      <button class="cover__button button" type="button">подобрать программу</button>
-      <img class="cover__image" src="#" width="709" height="609" alt="Корм для кошек">
+      <a class="cover__button" href="#">подобрать программу</a>
+      <picture>
+        <source class="cover__product-desktop" media=" (min-width:1440px)" width="552" type="image/png" height="499" srcset="./images/feed-hero-desktop@1x.png 1x,
+        ./images/feed-hero-desktop@2x.png 2x">"
+        <source class="cover__product-tablet" media="(min-width:768px)" width="709" type="image/png" height="609" srcset="./images/feed-hero-tablet 1@1x.png 1x, ./images/feed-hero-tablet 1@2x.png 2x">
+        <img class="cover__product-mobile" src="./images/feed-hero-mobile@1x.png" width="280" height="270" alt="Корм для кошек" srcset=" ./images/feed-hero-mobile@2x.png 2x">
+      </picture>
     </section>
 
     <section class="catalog">
@@ -87,20 +108,32 @@
         <span class="example__text-info">затрачено времени</span>
       </div>
       <p class="example__info-price">Затраты на питание: <span class="example__info-price">15 000 руб.</span></p>
-      <img class="example__image-cat" src="#" width="34" height="21" alt="крупный кот">
-      <img class="example__image-cat" src="#" width="34" height="21" alt="тощий кот">
+      <picture>
+        <source class="example__image-cat-desktop-tablet" media=" (min-width:768px)" width="560" type="image/png" height="512" srcset="./images/big-cat-desktop-tablet@1x.png 1x, ./images/big-cat-desktop-tablet@2x.png 2x">
+        <img class="example__image-cat-mobile" src="./images/big-cat-mobile@1x.png" width="280" height="256" alt="крупный кот" srcset="./images/big-cat-mobile@2x.png">
+      </picture>
+      <picture>
+        <source class="example__image-cat-desktop-tablet" media=" (min-width:768px)" width="560" type="image/png" height="512" srcset="./images/small-cat-desktop-tablet@1x.png 1x, ./images/small-cat-desktop-tablet@2x.png 2x">
+        <img class="example__image-cat-mobile" src="./images/small-cat-mobile@1x.png" width="280" height="256" alt="тощий кот" srcset="./images/small-cat-mobile@2x.png">
+      </picture>
     </section>
 
-    <div class="address">
+    <section class="address">
+      <h3 class="visually-hidden">Адрес</h3>
       <p class="address__text">приглашаем к сотрудничеству дилеров!</p>
       <address class="address__info">ул. Большая Конюшенная, д. 19/8</address>
       <address class="address__info">Санкт-Петербург</address>
-    </div>
+      <picture>
+        <source class="address__image-desktop" media=" (min-width:1440px)" width="1440" type="image/png" height="400" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
+        <source class="address__image-tablet" media="(min-width:768px)" width="768" type="image/png" height="400" srcset="./images/map-tabletp@1x.png 1x, ./images/map-tablet@2x.png 2x">
+        <img class="address__image-mobile" src="./images/map-mobile@1x.png" width="320" height="362" alt="Карта адреса" srcset="./images/map-mobile@2x.png">
+      </picture>
+    </section>
 
   </main>
 
   <footer class="footer">
-    <img class="logo" src="#" width="34" height="23" alt="Название сайта">
+    <img class="footer__logo-name-mobile-tablet" src="./images/logotype-name.svg" width="128" height="24" alt="Название сайта">
     <ul class="footer__list-contacts">
       <li class="footer__item-contacts">
         <a class="footer__link-contacts" href="#">
