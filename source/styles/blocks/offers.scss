@@ -1,0 +1,48 @@
+.offers {
+  background-color: #ffffff;
+}
+
+.offers__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.offers__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.offers__input {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  height: 56px;
+  padding: 13px auto 13px 13px;
+  border: 1px solid #cdcdcd;
+}
+
+.offers__button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  background-color: #68b738;
+  padding: 15px 82px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}

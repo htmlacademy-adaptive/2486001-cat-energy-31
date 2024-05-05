@@ -1,0 +1,58 @@
+.catalog-products {
+  background-color: #ffffff;
+}
+
+.catalog-products__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog-products__card-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.catalog-products__item {
+  list-style-type: none;
+}
+
+.catalog-products__card-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.catalog-products__card-button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: #68b738;
+  padding: 10px 109px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.catalog-products__card-button-choice {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px 95px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  text-decoration: none;
+}
