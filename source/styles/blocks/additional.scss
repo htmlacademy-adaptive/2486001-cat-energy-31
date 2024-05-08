@@ -47,12 +47,28 @@
   color: #ffffff;
 }
 
+.additional__promo {
+  width: 245px;
+  min-height: 288px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
 .additional__select-all {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
   text-align: center;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#present-icon");
+    background-repeat: no-repeat;
+    background-size: 80px 83px;
+    margin: 0 auto;
+    width: 80px;
+    height: 83px;
+    display: block;
+  }
 }

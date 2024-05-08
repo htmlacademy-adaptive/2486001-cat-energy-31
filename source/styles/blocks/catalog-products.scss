@@ -20,6 +20,14 @@
 
 .catalog-products__item {
   list-style-type: none;
+
+  &:last-child {
+    background-image: url("../../icons/stack.svg#plus-card-icon");
+    background-position: 25px;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    display: block;
+  }
 }
 
 .catalog-products__card-text {

@@ -38,6 +38,21 @@
   text-align: center;
 }
 
+.example__button-slider {
+  position: relative;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.example__button-slider-icon {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+
 .example__info-price {
   font-family: "Oswald", sans-serif;
   font-weight: 400;

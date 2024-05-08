@@ -41,9 +41,15 @@
       </ul>
       <button class="nav__burger-button" type="button">
         <span class="visually-hidden">кнопка открытия меню</span>
+        <svg class="nav__burger-button-icon" width="24" height="24">
+          <use href="../../icons/stack.svg#open-nav-mobile"></use>
+        </svg>
       </button>
       <button class="nav__burger-button" type="button">
         <span class="visually-hidden">кнопка закрытия меню</span>
+        <svg class="nav__burger-button-icon" width="24" height="24">
+          <use href="../../icons/stack.svg#close-nav-mobile"></use>
+        </svg>
       </button>
     </nav>
   </header>
@@ -169,7 +175,9 @@
           <button class="additional__button" type="button">заказать</button>
         </li>
       </ul>
-      <p class="additional__select-all">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional__promo">
+        <p class="additional__select-all">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </section>
 
     <section class="offers">
@@ -203,21 +211,33 @@
       <li class="footer__item-contacts">
         <a class="footer__link-contacts" href="#">
           <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="footer__item-contacts">
-        <a class="footer__link-contacts" href="#">
-          <span class="visually-hidden">Телеграм</span>
+          <svg class="footer__link-contacts-icon" width="27" height="17">
+            <use href="../../icons/stack.svg#vk-contacts"></use>
+          </svg>
         </a>
       </li>
       <li class="footer__item-contacts">
         <a class="footer__link-contacts" href="#">
           <span class="visually-hidden">Ютуб</span>
+          <svg class="footer__link-contacts-icon" width="24" height="19">
+            <use href="../../icons/stack.svg#youtube-contacts"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item-contacts">
+        <a class="footer__link-contacts" href="#">
+          <span class="visually-hidden">Телеграм</span>
+          <svg class="footer__link-contacts-icon" width="20" height="17">
+            <use href="../../icons/stack.svg#telegram-contacts"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <div class="footer__htmlacademy">
-      <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/study"><span class="footer__htmlacademy-html">html</span> Academy</a>
+      <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/study"><span class="footer__htmlacademy-html">html</span> Academy
+        <svg class="footer__htmlacademy-link-icon" width="27" height="34">
+          <use href="../../icons/stack.svg#html-academy"></use>
+        </svg></a>
     </div>
   </footer>
 </body>
