@@ -1,5 +1,17 @@
 .cover {
   background: linear-gradient(rgba(104, 183, 56, 0.85) 65%, #ffffff 65%);
+  margin: 0 auto;
+  width: 320px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .cover__title {
@@ -9,6 +21,29 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
+  padding-top: 27px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 120px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+  }
+}
+
+.cover__product {
+  display: block;
+  margin: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+  }
 }
 
 .cover__description {
@@ -18,9 +53,23 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 120px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+  }
 }
 
 .cover__button {
+  z-index: 211212;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -29,7 +78,7 @@
   padding: 10px 64px;
   background-color: #68b738;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0 20px 22px;
 }
