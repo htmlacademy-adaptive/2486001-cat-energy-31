@@ -1,0 +1,190 @@
+.how-work {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.how-work__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+  margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-bottom: 100px;
+  }
+}
+
+.how-work__list {
+  display: grid;
+  grid-template-rows: 60px 60px 60px 60px;
+  position: relative;
+  gap: 20px;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 280px 280px;
+    grid-template-columns: 230px 246px;
+    gap: 77px 137px;
+    margin-top: 72px;
+    margin-left: 30px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      position: absolute;
+      top: 575px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 230px 246px 248px 250px;
+    grid-template-rows: 280px;
+    margin: 0 110px 69px;
+    gap: 80px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.how-work__item {
+  list-style-type: none;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 80px 72px;
+    gap: 31px;
+
+    &--benefit:first-child::after {
+      content: "";
+      width: 112px;
+      height: 280px;
+      display: block;
+      position: absolute;
+      background-image: url("../../icons/stack.svg#1-icon-catalog");
+      background-size: 80px 240px;
+      background-repeat: no-repeat;
+      z-index: -1;
+      right: -4px;
+    }
+
+    &--benefit:nth-child(2)::after {
+      content: "";
+      width: 134px;
+      height: 280px;
+      display: block;
+      position: absolute;
+      background-image: url("../../icons/stack.svg#2-icon-catalog");
+      background-size: 120px 250px;
+      background-repeat: no-repeat;
+      z-index: -1;
+      right: 0;
+    }
+
+    &--benefit:nth-child(3)::after {
+      content: "";
+      width: 134px;
+      height: 280px;
+      display: block;
+      position: absolute;
+      background-image: url("../../icons/stack.svg#3-icon-catalog");
+      background-size: 130px 260px;
+      background-repeat: no-repeat;
+      z-index: -1;
+      right: -20px;
+    }
+
+    &--benefit:last-child::after {
+      content: "";
+      width: 136px;
+      height: 280px;
+      display: block;
+      position: absolute;
+      background-image: url("../../icons/stack.svg#4-icon-catalog");
+      background-size: 130px 250px;
+      background-repeat: no-repeat;
+      z-index: -1;
+      right: -4px;
+    }
+  }
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    min-width: 60px;
+    min-height: 60px;
+    background-position: 50%;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--benefit:first-child::before {
+    background-image: url("../../icons/stack.svg#sheet-icon");
+    background-size: 24px 28px;
+  }
+
+  &--benefit:nth-child(2)::before {
+    background-image: url("../../icons/stack.svg#bubbles-icon");
+    background-size: 26px 29px;
+  }
+
+  &--benefit:nth-child(3)::before {
+    background-image: url("../../icons/stack.svg#eat-icon");
+    background-size: 25px 30px;
+  }
+
+  &--benefit:last-child::before {
+    background-image: url("../../icons/stack.svg#watch-icon");
+    background-size: 26px 31px;
+  }
+}
+
+.how-work__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+  }
+}
