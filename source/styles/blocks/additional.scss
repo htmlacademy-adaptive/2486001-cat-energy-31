@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -19,49 +20,92 @@
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  text-align: center;
-  margin: 25px auto 36px 20px;
+  text-align: left;
+  margin: 25px auto 36px 0;
+  padding-left: 20px;
+  background-color: #ffffff;
+  width: 266px;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    background-color: #68b738;
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 40px;
+
+    @media (min-width: $tablet-width) {
+      top: 93px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 96px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin: 74px auto 80px 70px;
+    margin: 74px auto 80px 30px;
+    text-align: center;
+    width: 381px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin: 71px 844px 80px 110px;
+    margin: 71px 844px 80px 70px;
+    width: 456px;
   }
 }
 
 .additional__list {
   display: grid;
-  grid-template-columns: 320px;
-  grid-template-rows: 130px 130px 130px 130px;
-  margin: 0;
+  grid-template-columns: 280px;
+  margin: 0 auto;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 708px;
-    grid-template-rows: 139px 139px 139px 139px;
     margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 925px;
-    grid-template-rows: 72px 72px 72px 72px;
-    margin: 0 0 0 80px;
+    grid-template-columns: 895px;
+    margin: 0 0 0 111px;
   }
 }
 
 .additional__item {
   list-style-type: none;
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 }
 
@@ -73,8 +117,8 @@
   color: #222222;
   text-align: left;
   text-transform: uppercase;
-  margin-left: 20px;
   padding: 0;
+  margin-bottom: 0;
 
 
   @media (min-width: $tablet-width) {
@@ -83,16 +127,23 @@
     margin-top: 26px;
     margin-left: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    margin-left: 0;
+    margin-bottom: 27px;
+  }
 }
 
 .additional__mixing {
   display: flex;
-  margin: 13px 20px 15px;
+  margin: 10px auto 15px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin-right: 38px;
-    margin-top: 30px;
+    margin-top: 27px;
+    margin-bottom: 0;
     width: 223px;
   }
 
@@ -128,7 +179,18 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 20px 19px;
+  margin: 0 auto 19px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 285px;
@@ -137,7 +199,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 91px;
-    margin: 25px 0;
+    margin: 15px 0;
   }
 }
 
@@ -146,12 +208,18 @@
   height: 290px;
   background-color: rgba(104, 183, 56, 0.85);
   margin: 35px auto 0;
+  background-image: url("../../images/select-all-image@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     width: 707px;
     height: 200px;
     margin: 70 auto;
+    background-image: url("../../images/select-all-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -159,7 +227,10 @@
     height: 288px;
     margin: 0;
     margin-left: 80px;
-    margin-top: 8px;
+    margin-top: 0;
+    background-image: url("../../images/select-all-image@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

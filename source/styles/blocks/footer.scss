@@ -1,8 +1,9 @@
 .footer {
   background-color: #f2f2f2;
   width: 320px;
-  min-height: 147px;
   margin: 0 auto;
+  min-height: 100%;
+  display: table-row;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -23,7 +24,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto 416px auto 110px;
+    margin: 72px 416px 62px 110px;
+  }
+}
+
+.footer__name-link {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -34,14 +47,44 @@
   margin: 0 auto;
   width: 280px;
   min-height: 22px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    left: 5px;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-top: 63px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: auto o;
+    margin-top: 73px;
   }
 }
 
@@ -57,6 +100,10 @@
   margin: 20px;
   text-decoration: none;
 
+  &:focus-visible {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 168px;
     margin-left: 150px;
@@ -65,7 +112,22 @@
   @media (min-width: $desktop-width) {
     margin-left: 376px;
     margin-right: 110px;
+    margin-top: 15px;
   }
+}
+
+.footer__htmlacademy-logo {
+  fill: #666666;
+}
+
+.footer__htmlacademy:hover .footer__htmlacademy-logo,
+.footer__htmlacademy:focus-visible .footer__htmlacademy-logo {
+  fill: #68b738;
+}
+
+.footer__htmlacademy:active .footer__htmlacademy-logo {
+  fill: #68b738;
+  opacity: 0.3;
 }
 
 .footer__htmlacademy-text {
@@ -74,4 +136,36 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+}
+
+.footer__link-contacts-icon {
+  fill: #666666;
+  width: 25px;
+  height: 17px;
+
+  &:hover,
+  &:focus-visible {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.footer__link-contacts:hover .footer__link-contacts-icon,
+.footer__link-contacts:focus-visible .footer__link-contacts-icon {
+  outline: none;
+  fill: #68b738;
+}
+
+.footer__link-contacts {
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.footer__htmlacademy:active .footer__htmlacademy-text {
+  opacity: 0.3;
 }
