@@ -1,17 +1,25 @@
 .footer {
   background-color: #f2f2f2;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  min-height: 100%;
-  display: table-row;
+  margin-top: auto;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 1220px;
+    min-height: 169px;
   }
 }
 
@@ -20,11 +28,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 62px 160px 62px 30px;
+    margin: 62px 140px 62px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 72px 416px 62px 110px;
+    margin: 0;
   }
 }
 
@@ -43,35 +51,36 @@
 .footer__list-contacts {
   display: flex;
   justify-content: space-between;
-  padding: 20px 74px;
   margin: 0 auto;
-  width: 280px;
+  padding: 20px 70px;
+  width: 275px;
   min-height: 22px;
   position: relative;
 
   &::before {
     content: "";
-    width: 280px;
+    width: 100%;
     height: 1px;
     background-color: #d9d9d9;
     position: absolute;
-    left: 5px;
-    top: 0;
+    left: 1px;
+    top: -3px;
   }
 
   &::after {
     content: "";
-    width: 280px;
+    width: 100%;
     height: 1px;
     background-color: #d9d9d9;
     position: absolute;
-    left: 5px;
-    bottom: 0;
+    left: 1px;
+    bottom: 4px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-top: 63px;
+    width: 132px;
+    margin-top: 5px;
 
     &::before {
       display: none;
@@ -83,8 +92,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto o;
-    margin-top: 73px;
+    margin: 0;
+    transform: translateX(15px);
   }
 }
 
@@ -97,7 +106,8 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  margin: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
   text-decoration: none;
 
   &:focus-visible {
@@ -105,14 +115,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 168px;
-    margin-left: 150px;
+    margin-top: 0;
+    width: 160px;
+    margin-left: 120px;
+    transform: translateX(-10px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 376px;
-    margin-right: 110px;
-    margin-top: 15px;
+    margin: 0;
+    transform: translateX(0);
   }
 }
 
@@ -140,13 +151,22 @@
 
 .footer__link-contacts-icon {
   fill: #666666;
-  width: 25px;
-  height: 17px;
 
-  &:hover,
-  &:focus-visible {
-    fill: #68b738;
+  &--vk {
+    width: 27px;
+    height: 17px;
   }
+
+  &--youtube {
+    width: 24px;
+    height: 18px;
+  }
+
+  &--tg {
+    width: 19px;
+    height: 17px;
+  }
+
 
   &:active {
     fill: #68b738;

@@ -12,13 +12,14 @@
 }
 
 .how-work__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   color: #000000;
   margin-left: 21px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -28,7 +29,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 110px;
-    margin-bottom: 100px;
+    margin-bottom: 72px;
   }
 }
 
@@ -40,29 +41,32 @@
   padding: 0;
   margin-top: 40px;
   margin-left: 20px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 280px 280px;
     grid-template-columns: 230px 246px;
-    gap: 77px 137px;
+    gap: 37px 153px;
     margin-top: 72px;
     margin-left: 30px;
+    margin-bottom: 52px;
 
     &::after {
       content: "";
-      width: 100%;
+      width: 768px;
       height: 1px;
       background-color: #e6e6e6;
       position: absolute;
-      top: 575px;
+      top: 602px;
+      left: -30px;
     }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 230px 246px 248px 250px;
     grid-template-rows: 280px;
-    margin: 0 110px 69px;
-    gap: 80px;
+    margin: 0 110px 30px;
+    gap: 86px;
 
     &::after {
       display: none;
@@ -89,8 +93,9 @@
       display: block;
       position: absolute;
       background-image: url("../../icons/stack.svg#1-icon-catalog");
-      background-size: 80px 240px;
+      background-size: 80px 230px;
       background-repeat: no-repeat;
+      background-position: 0 -4px;
       z-index: -1;
       right: -4px;
     }
@@ -102,7 +107,8 @@
       display: block;
       position: absolute;
       background-image: url("../../icons/stack.svg#2-icon-catalog");
-      background-size: 120px 250px;
+      background-size: 110px 240px;
+      background-position: 10px -8px;
       background-repeat: no-repeat;
       z-index: -1;
       right: 0;
@@ -115,7 +121,8 @@
       display: block;
       position: absolute;
       background-image: url("../../icons/stack.svg#3-icon-catalog");
-      background-size: 130px 260px;
+      background-size: 120px 230px;
+      background-position: 3px 0;
       background-repeat: no-repeat;
       z-index: -1;
       right: -20px;
@@ -128,7 +135,8 @@
       display: block;
       position: absolute;
       background-image: url("../../icons/stack.svg#4-icon-catalog");
-      background-size: 130px 250px;
+      background-size: 120px 230px;
+      background-position: 10px -5px;
       background-repeat: no-repeat;
       z-index: -1;
       right: -4px;
@@ -172,7 +180,7 @@
 }
 
 .how-work__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -186,5 +194,31 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
+  }
+
+  &--time {
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
+  }
+}
+
+.how-work__problem {
+  &--word-problem {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 157px;
+      left: 0;
+    }
+  }
+
+  &--word-problem-second {
+    position: absolute;
+    right: 38px;
+
+    @media (min-width: $tablet-width) {
+      top: 157px;
+      left: 57px;
+    }
   }
 }

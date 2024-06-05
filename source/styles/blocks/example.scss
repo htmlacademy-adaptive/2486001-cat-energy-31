@@ -1,28 +1,37 @@
 .example {
   background-color: #eaeaea;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(#ffffff 56%, #eaeaea 56%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(#ffffff 23%, #f2f2f2 23%);
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(#ffffff 40%, #eaeaea 40%);
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(#ffffff 7%, #f2f2f2 7%);
   }
 }
 
-
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -31,12 +40,13 @@
   margin-left: 20px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 20px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-left: 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,7 +55,7 @@
 }
 
 .example__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -60,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 110px;
+    margin-top: 148px;
     margin-left: 110px;
     max-width: 432px;
   }
@@ -90,7 +100,7 @@
 }
 
 .example__weight-info {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -113,7 +123,7 @@
 }
 
 .example__text-info {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -125,7 +135,6 @@
   z-index: 10;
   top: 45px;
   left: 23px;
-
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -149,44 +158,140 @@
   }
 }
 
-.example__button-slider {
+.example__slider {
   position: relative;
+}
+
+.example__toggle {
+  position: absolute;
+  background-color: #666666;
+  width: 4px;
+  height: 110px;
+  z-index: 1;
+  border-radius: 4px;
+
+  &:not(.example__toggle--second) {
+    top: -110px;
+    left: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 4px;
+      height: 236px;
+      top: -236px;
+      left: 16px;
+    }
+  }
+
+  &:not(.example__toggle--first) {
+    top: 36px;
+    left: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 4px;
+      height: 236px;
+      left: 16px;
+    }
+  }
+}
+
+.example__button-slider {
   background-color: #ffffff;
   border: 2px solid #666666;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  position: absolute;
+  top: 108px;
+  left: 120px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: #68b738;
+  }
+
+  &:active {
+    border-color: rgba(104, 183, 56, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+    left: 260px;
+  }
 }
 
 .example__button-slider-icon {
   position: absolute;
+  background-color: #ffffff;
+  fill: #666666;
   top: 10px;
   left: 6px;
 }
 
+.example__button-slider:hover .example__button-slider-icon,
+.example__button-slider:focus .example__button-slider-icon {
+  outline: none;
+  fill: #68b738;
+}
+
+.example__button-slider:active .example__button-slider-icon {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
+.example__button-slider:hover .example__toggle,
+.example__button-slider:focus .example__toggle {
+  outline: none;
+  background-color: #68b738;
+}
+
+.example__button-slider:active .example__toggle {
+  background-color: rgba(104, 183, 56, 0.6);
+}
+
+.example__cat-slider {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 95px;
+    margin-left: 104px;
+    padding-bottom: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 110px;
+    margin-top: 0;
+    padding-bottom: 88px;
+  }
+}
 
 .example__info-price-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 27px;
     margin-left: auto;
     margin-right: 30px;
-    margin-top: -70px;
+    margin-top: -84px;
     text-align: right;
     max-width: 180px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 20px;
+    margin-top: 56px;
     margin-right: 0;
     margin-left: 110px;
     text-align: center;
@@ -195,4 +300,3 @@
     min-width: 330px;
   }
 }
-
