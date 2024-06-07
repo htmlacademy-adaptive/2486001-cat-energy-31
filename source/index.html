@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon32.ico">
   <link rel="icon" href="./favicons/favicon16.svg" type="image/png">
   <script src="scripts/index.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8f65facc-2385-458e-8305-a01cb47bb55c" defer="defer"></script>
+  <script src="scripts/castom-map.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -151,20 +153,16 @@
 
     <section class="address">
       <h3 class="visually-hidden">Адрес</h3>
-      <div class="address__info-full">
-        <p class="address__text">приглашаем <br>к сотрудничеству <br>дилеров!</p>
-        <div class="address__city-location">
-          <address class="address__info">ул. Большая <br>Конюшенная, д. 19/8</address>
-          <address class="address__info address__info--city">Санкт-Петербург</address>
+      <div class="address__wrapper">
+        <div class="address__info-full">
+          <p class="address__text">приглашаем <br>к сотрудничеству <br>дилеров!</p>
+          <div class="address__city-location">
+            <address class="address__info">ул. Большая <br>Конюшенная, д. 19/8</address>
+            <address class="address__info address__info--city">Санкт-Петербург</address>
+          </div>
         </div>
       </div>
-      <div class="address__map">
-        <picture>
-          <source class="address__image address__image--desktop" media=" (min-width:1440px)" width="1440" type="image/png" height="400" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
-          <source class="address__image address__image--tablet" media="(min-width:768px)" width="768" type="image/png" height="400" srcset="./images/map-tabletp@1x.png 1x, ./images/map-tablet@2x.png 2x">
-          <img class="address__image address__image--mobile" src="./images/map-mobile@1x.png" width="320" height="362" alt="Карта адреса" srcset="./images/map-mobile@2x.png">
-        </picture>
-      </div>
+      <div class="map" id="map"></div>
     </section>
 
   </main>

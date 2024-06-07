@@ -222,8 +222,18 @@
   margin-top: 25px;
   margin-left: 22px;
 
-  &:focus-visible {
+  &:focus-visible,
+  &:hover {
     outline: none;
+    width: 133;
+
+    @media (min-width: $tablet-width) {
+      width: 166px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 166px;
+    }
   }
 
   &:active {
@@ -244,7 +254,14 @@
   }
 }
 
+.catalog__link:hover .catalog__link-icon {
+  width: 35px;
+}
+
 .catalog__link-text {
+  z-index: 1;
+  background-color: #f2f2f2;
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }

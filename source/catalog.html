@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon32.ico">
   <link rel="icon" href="./favicons/favicon16.svg" type="image/png">
   <script src="scripts/index.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8f65facc-2385-458e-8305-a01cb47bb55c" defer="defer"></script>
+  <script src="scripts/castom-map.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -30,7 +32,7 @@
           </picture>
         </div>
       </a>
-      <nav class="nav nav--open nav--nojs">
+      <nav class="header__nav nav nav--open nav--nojs">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">кнопка открытия меню</span>
         </button>
@@ -58,14 +60,16 @@
       <ul class="catalog-products__list">
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--small">
-              <picture>
-                <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="161" type="image/png" height="172" srcset="./images/small-feed-chiken-desktop-tablet@1x.png 1x, ./images/small-feed-chiken-desktop-tablet@2x.png 2x">
-                <img class="catalog-products__image-small-mobile" src="./images/small-feed-chicken-mobile@1x.png" width="68" height="86" alt="маленький корм с курицей" srcset="./images/small-feed-chicken-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--small">
+                <picture>
+                  <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="161" type="image/png" height="172" srcset="./images/small-feed-chiken-desktop-tablet@1x.png 1x, ./images/small-feed-chiken-desktop-tablet@2x.png 2x">
+                  <img class="catalog-products__image-small-mobile" src="./images/small-feed-chicken-mobile@1x.png" width="68" height="86" alt="маленький корм с курицей" srcset="./images/small-feed-chicken-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy pro 500 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy pro 500 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -87,15 +91,17 @@
         </li>
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--big">
-              <picture>
-                <source class="catalog-products__image-big-desktop" media=" (min-width:1440px)" width="172" type="image/png" height="196" srcset="./images/big-feed-chiken-desktop@1x.png 1x, ./images/big-feed-chiken-desktop@2x.png 2x">
-                <source class="catalog-products__image-big-tablet" media=" (min-width:768px)" width="168" type="image/png" height="206" srcset="./images/big-feed-chiken-tablet@1x.png 1x, ./images/big-feed-chiken-tablet@2x.png 2x">
-                <img class="catalog-products__image-big" src="./images/big-feed-chiken-mobile@1x.png" width="84" height="100" alt="большой корм с курицей" srcset="./images/big-feed-chiken-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--big">
+                <picture>
+                  <source class="catalog-products__image-big-desktop" media=" (min-width:1440px)" width="172" type="image/png" height="196" srcset="./images/big-feed-chiken-desktop@1x.png 1x, ./images/big-feed-chiken-desktop@2x.png 2x">
+                  <source class="catalog-products__image-big-tablet" media=" (min-width:768px)" width="168" type="image/png" height="206" srcset="./images/big-feed-chiken-tablet@1x.png 1x, ./images/big-feed-chiken-tablet@2x.png 2x">
+                  <img class="catalog-products__image-big" src="./images/big-feed-chiken-mobile@1x.png" width="84" height="100" alt="большой корм с курицей" srcset="./images/big-feed-chiken-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy pro 1000 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy pro 1000 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -117,14 +123,16 @@
         </li>
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--small">
-              <picture>
-                <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="163" type="image/png" height="174" srcset="./images/small-feed-fish-desktop-tablet@1x.png 1x, ./images/small-feed-fish-desktop-tablet@2x.png 2x">
-                <img class="catalog-products__image-small" src="./images/small-feed-fish-mobile@1x.png" width="68" height="86" alt="маленький корм с рыбой" srcset="./images/small-feed-fish-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--small">
+                <picture>
+                  <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="163" type="image/png" height="174" srcset="./images/small-feed-fish-desktop-tablet@1x.png 1x, ./images/small-feed-fish-desktop-tablet@2x.png 2x">
+                  <img class="catalog-products__image-small" src="./images/small-feed-fish-mobile@1x.png" width="68" height="86" alt="маленький корм с рыбой" srcset="./images/small-feed-fish-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy pro 500 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy pro 500 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -146,15 +154,17 @@
         </li>
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--big">
-              <picture>
-                <source class="catalog-products__image-big-desktop" media=" (min-width:1440px)" width="172" type="image/png" height="196" srcset="./images/big-feed-fish-desktop@1x.png 1x, ./images/big-feed-fish-desktop@2x.png 2x">
-                <source class="catalog-products__image-big-tablet" media=" (min-width:768px)" width="168" type="image/png" height="200" srcset="./images/big-feed-feed-tablet@1x.png 1x, ./images/big-feed-fish-tablet@2x.png 2x">
-                <img class="catalog-products__image-big" src="./images/big-feed-fish-mobile@1x.png" width="84" height="100" alt="большой корм с рыбой" srcset="./images/big-feed-fish-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--big">
+                <picture>
+                  <source class="catalog-products__image-big-desktop" media=" (min-width:1440px)" width="172" type="image/png" height="196" srcset="./images/big-feed-fish-desktop@1x.png 1x, ./images/big-feed-fish-desktop@2x.png 2x">
+                  <source class="catalog-products__image-big-tablet" media=" (min-width:768px)" width="168" type="image/png" height="200" srcset="./images/big-feed-feed-tablet@1x.png 1x, ./images/big-feed-fish-tablet@2x.png 2x">
+                  <img class="catalog-products__image-big" src="./images/big-feed-fish-mobile@1x.png" width="84" height="100" alt="большой корм с рыбой" srcset="./images/big-feed-fish-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy pro 1000 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy pro 1000 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -176,14 +186,16 @@
         </li>
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--small">
-              <picture>
-                <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="161" type="image/png" height="171" srcset="./images/small-feed-buckwheat-desktop-tablet@1x.png 1x, ./images/small-feed-buckwheat-desktop-tablet@2x.png 2x">
-                <img class="catalog-products__image-small" src="./images/small-feed-buckwheat-mobile@1x.png" width="68" height="86" alt="маленький корм с гречкой" srcset="./images/small-feed-buckwheat-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--small">
+                <picture>
+                  <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="161" type="image/png" height="171" srcset="./images/small-feed-buckwheat-desktop-tablet@1x.png 1x, ./images/small-feed-buckwheat-desktop-tablet@2x.png 2x">
+                  <img class="catalog-products__image-small" src="./images/small-feed-buckwheat-mobile@1x.png" width="68" height="86" alt="маленький корм с гречкой" srcset="./images/small-feed-buckwheat-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy slim 500 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy slim 500 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -205,15 +217,17 @@
         </li>
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--big">
-              <picture>
-                <source class="catalog-products__image-big-desktop" media=" (min-width:1440px)" width="172" type="image/png" height="196" srcset="./images/big-feed-buckwheat-desktop@1x.png 1x, ./images/big-feed-buckwheat-desktop@2x.png 2x">
-                <source class="catalog-products__image-big-tablet" media=" (min-width:768px)" width="168" type="image/png" height="200" srcset="./images/big-feed-buckwheat-tablet@1x.png 1x, ./images/big-feed-buckwheat-tablet@2x.png 2x">
-                <img class="catalog-products__image-big" src="./images/big-feed-buckwheat-mobile@1x.png" width="84" height="100" alt="большой корм с гречкой" srcset="./images/big-feed-buckwheat-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--big">
+                <picture>
+                  <source class="catalog-products__image-big-desktop" media=" (min-width:1440px)" width="172" type="image/png" height="196" srcset="./images/big-feed-buckwheat-desktop@1x.png 1x, ./images/big-feed-buckwheat-desktop@2x.png 2x">
+                  <source class="catalog-products__image-big-tablet" media=" (min-width:768px)" width="168" type="image/png" height="200" srcset="./images/big-feed-buckwheat-tablet@1x.png 1x, ./images/big-feed-buckwheat-tablet@2x.png 2x">
+                  <img class="catalog-products__image-big" src="./images/big-feed-buckwheat-mobile@1x.png" width="84" height="100" alt="большой корм с гречкой" srcset="./images/big-feed-buckwheat-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy slim 1000 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy slim 1000 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -234,14 +248,16 @@
         </li>
         <li class="catalog-products__item">
           <div class="catalog-products__info-product">
-            <div class="catalog-products__image catalog-products__image--small">
-              <picture>
-                <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="161" type="image/png" height="171" srcset="./images/small-feed-rice-desktop-tablet@1x.png 1x, ./images/small-feed-rice-desktop-tablet@2x.png 2x">
-                <img class="catalog-products__image-small" src="./images/small-feed-rice-mobile@1x.png" width="68" height="86" alt="маленький корм с рисом" srcset="./images/small-feed-rice-mobile@2x.png 2x">
-              </picture>
-            </div>
+            <a href="#">
+              <div class="catalog-products__image catalog-products__image--small">
+                <picture>
+                  <source class="catalog-products__image-small-desktop-tablet" media=" (min-width:768px)" width="161" type="image/png" height="171" srcset="./images/small-feed-rice-desktop-tablet@1x.png 1x, ./images/small-feed-rice-desktop-tablet@2x.png 2x">
+                  <img class="catalog-products__image-small" src="./images/small-feed-rice-mobile@1x.png" width="68" height="86" alt="маленький корм с рисом" srcset="./images/small-feed-rice-mobile@2x.png 2x">
+                </picture>
+              </div>
+            </a>
             <div class="catalog-products__info">
-              <h3 class="catalog-products__card-title">Cat Energy slim 500 г</h3>
+              <h3 class="catalog-products__card-title"><a class="catalog-products__title-link" href="#">Cat Energy slim 500 г</a></h3>
               <ul class="catalog-products__list-info">
                 <li class="catalog-products__card-text">
                   <p>Масса</p>
@@ -268,7 +284,9 @@
               <use href="../../icons/stack.svg#plus-card-icon"></use>
             </svg>
           </a>
-          <h3 class="catalog-products__card-title catalog-products__card-title--choice">Показать еще 100500 товаров</h3>
+          <h3 class="catalog-products__card-title catalog-products__card-title--choice">
+            <a class="catalog-products__title-link" href="#">Показать еще 100500 товаров</a>
+          </h3>
           <p class="catalog-products__card-text catalog-products__card-text--choice">На самом деле вкусов гораздо больше!</p>
           <a class="catalog-products__card-button-choice" href="#">показать все</a>
         </li>
@@ -334,18 +352,16 @@
 
     <section class="address address--catalog">
       <h3 class="visually-hidden">Адрес</h3>
-      <div class="address__info-full">
-        <p class="address__text">приглашаем <br>к сотрудничеству <br>дилеров!</p>
-        <div class="address__city-location">
-          <address class="address__info">ул. Большая <br>Конюшенная, д. 19/8</address>
-          <address class="address__info address__info--city">Санкт-Петербург</address>
+      <div class="address__wrapper">
+        <div class="address__info-full">
+          <p class="address__text">приглашаем <br>к сотрудничеству <br>дилеров!</p>
+          <div class="address__city-location">
+            <address class="address__info">ул. Большая <br>Конюшенная, д. 19/8</address>
+            <address class="address__info address__info--city">Санкт-Петербург</address>
+          </div>
         </div>
       </div>
-      <picture>
-        <source class="address__image address__image--desktop" media=" (min-width:1440px)" width="1440" type="image/png" height="400" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
-        <source class="address__image address__image--tablet" media="(min-width:768px)" width="768" type="image/png" height="400" srcset="./images/map-tabletp@1x.png 1x, ./images/map-tablet@2x.png 2x">
-        <img class="address__image address__image--mobile" src="./images/map-mobile@1x.png" width="320" height="362" alt="Карта адреса" srcset="./images/map-mobile@2x.png">
-      </picture>
+      <div class="map" id="map"></div>
     </section>
 
   </main>

@@ -39,6 +39,12 @@
   }
 }
 
+
+.catalog-products__title-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .catalog-products__list {
   display: grid;
   grid-template-rows: 209px;

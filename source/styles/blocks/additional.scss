@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .additional__wrapper {
@@ -279,7 +280,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/select-all-desktop@2x.png");
+      background-image: url("../../images/select-all-desktop@2x.jpg");
       background-size: cover;
     }
   }

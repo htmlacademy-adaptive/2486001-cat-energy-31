@@ -8,10 +8,6 @@
   }
 }
 
-.nav--nojs .nav--toggle {
-  display: none;
-}
-
 .nav__toggle {
   position: absolute;
   top: 10px;
@@ -82,6 +78,14 @@
   .nav--open .nav__list {
     display: none;
   }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav--nojs .nav__list {
+    display: block;
+  }
 }
 
 
@@ -99,7 +103,6 @@
   grid-template-rows: 66px 66px 66px;
   text-align: center;
   min-height: 198px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
